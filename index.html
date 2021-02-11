@@ -85,6 +85,19 @@
 			
 		}
 		calcRespCanvas();
+			
+			function _waitLoad(){
+			document.querySelector("#canvas").style.opacity = "0";
+
+			setTimeout(() => {
+				document.querySelector("#canvas").style.opacity = "1";
+			
+
+			}, 2050);
+
+		
+		}
+		_waitLoad();
 
         var cursorRect = cursor.getBoundingClientRect();
 
